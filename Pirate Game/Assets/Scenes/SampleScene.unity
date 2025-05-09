@@ -260,6 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 5
+  jollyRoger: 0
 --- !u!114 &157748337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,6 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown: 2
   offset: 0
+  jrScript: {fileID: 157748336}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

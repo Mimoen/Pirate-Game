@@ -11,7 +11,7 @@ public class JollyRoger : MonoBehaviour
     SpriteRenderer sr;
     float heldDownTime;
     float jrTimer;
-    bool jollyRoger;
+    public bool jollyRoger;
 
     void Start()
     {
@@ -31,7 +31,7 @@ public class JollyRoger : MonoBehaviour
                 RaiseJollyRoger();
                 heldDownTime = 0;
                 jrTimer = cooldown;
-                Debug.Log(jollyRoger);
+                Debug.Log("Jolly Roger " + jollyRoger);
             }
         }
         else
