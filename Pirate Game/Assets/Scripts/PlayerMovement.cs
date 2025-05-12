@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 [RequireComponent(typeof(Rigidbody2D))]
+
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField, Range(1, 50)] float force = 7; // Ship speed
@@ -29,8 +31,5 @@ public class PlayerMovement : MonoBehaviour
         // Limits ship speed and rotation speed
         rb.velocity = new Vector2(Mathf.Clamp(rb.velocity.x, -speedLimitX, speedLimitX), Mathf.Clamp(rb.velocity.y, -speedLimitY, speedLimitY));
         rb.angularVelocity = Mathf.Clamp(rb.angularVelocity, -torqueLimit, torqueLimit);
-
-
-
     }
 }

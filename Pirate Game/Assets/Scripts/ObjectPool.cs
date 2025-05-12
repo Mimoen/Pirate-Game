@@ -5,8 +5,8 @@ using UnityEngine;
 public class ObjectPool : MonoBehaviour
 {
     public List<GameObject> pooledObjects;
-    public GameObject prefab; // Vad som finns i poolen.
-    public int amountToPool; // Hur många objekt som finns i poolen.
+    public GameObject prefab; // Object inside the pool
+    public int amountToPool; // Amount in the pool
 
     public static ObjectPool instance;
 
@@ -42,7 +42,7 @@ public class ObjectPool : MonoBehaviour
                 pooledObjects[i].transform.rotation = rotation;
                 pooledObjects[i].SetActive(true);
                 return pooledObjects[i];
-                // Turns on and places bullets in front of ship
+                // Turns on and places bullets in place
             }
         }
         GameObject temp = Instantiate(prefab);

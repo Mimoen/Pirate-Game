@@ -162,8 +162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4baded08817f1449e124695d7eba3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 2
-  offset: 0
   leftCannons:
   - {fileID: 3158489496059470445}
   - {fileID: 3158489495763711261}
@@ -172,6 +170,8 @@ MonoBehaviour:
   - {fileID: 3158489496559325290}
   - {fileID: 3158489496584765171}
   - {fileID: 3158489495601307486}
+  fireEffect: {fileID: 8537355183480479692, guid: 53f56ade671a4454a8647c8d010832e2, type: 3}
+  cooldown: 2
   jrScript: {fileID: 3158489495563975771}
 --- !u!114 &3158489495563975771
 MonoBehaviour:

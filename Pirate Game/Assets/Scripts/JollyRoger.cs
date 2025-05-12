@@ -4,6 +4,7 @@ using System.Threading;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(Animator))]
 
 public class JollyRoger : MonoBehaviour
 {
