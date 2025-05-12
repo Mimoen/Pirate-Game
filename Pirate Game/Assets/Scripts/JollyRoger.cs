@@ -9,6 +9,7 @@ public class JollyRoger : MonoBehaviour
 {
     [SerializeField] float cooldown;
     SpriteRenderer sr;
+    Animator anim;
     float heldDownTime;
     float jrTimer;
     public bool jollyRoger;
@@ -16,6 +17,7 @@ public class JollyRoger : MonoBehaviour
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
         jollyRoger = false;
     }
 
@@ -49,13 +51,15 @@ public class JollyRoger : MonoBehaviour
         // Changes Sprite when Jolly Roger is raised/unraised
         if (jollyRoger == false)
         {
-            sr.color = Color.black;
+            // sr.color = Color.black;
             jollyRoger = true;
+            anim.SetBool("IsDisguise", false);
         }
         else
         {
-            sr.color = Color.white;
+            // sr.color = Color.white;
             jollyRoger = false;
+            anim.SetBool("IsDisguise", true);
         }
     }
 }
