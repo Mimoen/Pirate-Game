@@ -13,8 +13,12 @@ public class PlayerShooting : MonoBehaviour
 
     float leftFireTimer;
     float rightFireTimer;
+    JollyRoger jrScript;
 
-    public JollyRoger jrScript;
+    private void Start()
+    {
+        jrScript = GetComponent<JollyRoger>();
+    }
 
     void Update()
     {
