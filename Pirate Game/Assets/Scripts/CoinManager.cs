@@ -15,6 +15,6 @@ public class CoinManager : MonoBehaviour
 
     void Update()
     {
-        coinText.text = "Doubloons: " + coinCount.ToString();
+        coinText.text = coinCount.ToString();
     }
 }
