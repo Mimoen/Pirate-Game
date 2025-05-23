@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3158489495563969446}
   - component: {fileID: 3158489495563969447}
   - component: {fileID: 3158489495563975768}
+  - component: {fileID: 2184406200244950955}
   - component: {fileID: 3158489495563975769}
   - component: {fileID: 3158489495563975770}
   - component: {fileID: 3158489495563975771}
@@ -133,6 +134,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!61 &2184406200244950955
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3158489495563975772}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.1}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.5, y: 2.5}
+    newSize: {x: 2.5, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 2.2}
+  m_EdgeRadius: 0
 --- !u!114 &3158489495563975769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +177,7 @@ MonoBehaviour:
   torqueLimit: 15
   speedLimitX: 25
   speedLimitY: 25
+  cm: {fileID: 0}
 --- !u!114 &3158489495563975770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +200,6 @@ MonoBehaviour:
   - {fileID: 3158489495601307486}
   fireEffect: {fileID: 8537355183480479692, guid: 53f56ade671a4454a8647c8d010832e2, type: 3}
   cooldown: 2
-  jrScript: {fileID: 3158489495563975771}
 --- !u!114 &3158489495563975771
 MonoBehaviour:
   m_ObjectHideFlags: 0

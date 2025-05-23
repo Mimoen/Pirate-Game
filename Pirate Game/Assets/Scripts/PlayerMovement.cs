@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rb;
 
+    public CoinManager cm;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -31,5 +33,19 @@ public class PlayerMovement : MonoBehaviour
         // Limits ship speed and rotation speed
         rb.velocity = new Vector2(Mathf.Clamp(rb.velocity.x, -speedLimitX, speedLimitX), Mathf.Clamp(rb.velocity.y, -speedLimitY, speedLimitY));
         rb.angularVelocity = Mathf.Clamp(rb.angularVelocity, -torqueLimit, torqueLimit);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Collectible"))
+        {
+            Collectible chest = other.GetComponent<Collectible>();
+            if (chest != null)
+            {
+                chest.Collect();
+                cm.coinCount += 100;
+                Debug.Log("Collected");
+            }
+        }
     }
 }

@@ -21,6 +21,6 @@ public class MerchantAI : EnemyDetector
 
     protected override void OnPlayerDetected()
     {
-        Debug.Log("Merchant fleeing from player!");
+        // Debug.Log("Merchant fleeing from player!");
     }
 }

@@ -21,6 +21,6 @@ public class GuardAI : EnemyDetector
 
     protected override void OnPlayerDetected()
     {
-        Debug.Log("Guard engaging the player!");
+        // Debug.Log("Guard engaging the player!");
     }
 }
